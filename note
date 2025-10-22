@@ -5,6 +5,7 @@ fastboot delete-logical-partition product_b
 fastboot delete-logical-partition system_ext_a
 fastboot delete-logical-partition system_ext_b
 fastboot flash system /path/to/xxxx.img
+fastboot flash system  /home/definitly/downloads/android/REDMI_A5/lineage-20.0-20250606-UNOFFICIAL-arm64_bvN.img
 fastboot reboot recovery
 format data factory reset
 
