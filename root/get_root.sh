@@ -10,3 +10,4 @@ fi
 
 fastboot flash boot_a /tmp/redmia5/boot_path.img
 fastboot flash boot_b /tmp/redmia5/boot_path.img
+fastboot reboot
