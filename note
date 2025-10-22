@@ -6,3 +6,7 @@ fastboot delete-logical-partition system_ext_b
 fastboot flash system /path/to/xxxx.img
 fastboot reboot recovery
 format data factory reset
+
+
+adb root 
+adb disable-verity
