@@ -1,4 +1,5 @@
 fastboot reboot fastboot
+fastboot erase system
 fastboot delete-logical-partition product_a
 fastboot delete-logical-partition product_b
 fastboot delete-logical-partition system_ext_a
