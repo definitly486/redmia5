@@ -16,3 +16,7 @@ adb root
 adb disable-verity
 
 mount -o rw,remount /system
+
+
+serenity_ru_global_images_A15.0.5.0.VGWRUXM_15.0 magisk  earse data  boot successfully
+serenity_ru_global_images_A15.0.5.0.VGWRUXM_15.0 APatch  earse data  boot successfully
