@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BOOT=android13-5.15.167_2024-11-boot.img
+BOOT=kernelsu_patched_20251023_111041.img
 
 mkdir /tmp/redmia5
 

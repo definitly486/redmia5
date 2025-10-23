@@ -20,3 +20,6 @@ mount -o rw,remount /system
 
 serenity_ru_global_images_A15.0.5.0.VGWRUXM_15.0 magisk  earse data  boot successfully
 serenity_ru_global_images_A15.0.5.0.VGWRUXM_15.0 APatch  earse data  boot successfully
+
+
+Linux localhost 5.15.149-android13-8-00008-gbe074b05e5af-ab12096863 #1 SMP PREEMPT Tue Jul 16 15:36:08 UTC 2024 aarch64 Toybox
