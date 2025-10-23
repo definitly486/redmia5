@@ -6,9 +6,13 @@ fastboot delete-logical-partition system_ext_a
 fastboot delete-logical-partition system_ext_b
 fastboot flash system /path/to/xxxx.img
 fastboot flash system  /home/definitly/downloads/android/REDMI_A5/lineage-20.0-20250606-UNOFFICIAL-arm64_bvN.img
+fastboot flash system  /home/definitly/downloads/android/REDMI_A5/LineageOS-22.2-20251010-GAPPS-EROFS-GSI.img грузится 
+fastboot flash system  /home/definitly/downloads/android/REDMI_A5/lineage-19.1-20250606-UNOFFICIAL-arm64_bvS.img не загружается 
 fastboot reboot recovery
 format data factory reset
 
 
 adb root 
 adb disable-verity
+
+mount -o rw,remount /system
