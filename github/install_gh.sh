@@ -9,7 +9,7 @@ fi
 
 
 if ! [  -f "gh.tar.xz.enc" ]; then
-  busybox  curl -L -o   gh.tar.xz.enc  https://github.com/definitly486/definitly486/releases/download/gh/gh.tar.xz.enc
+  busybox  wget -L -O   gh.tar.xz.enc  https://github.com/definitly486/definitly486/releases/download/gh/gh.tar.xz.enc
 fi
 
 
