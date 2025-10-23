@@ -9,7 +9,7 @@ fi
 
 
 if ! [  -f "gh.tar.xz.enc" ]; then
-    curl -L  -o   gh.tar.xz.enc  https://github.com/definitly486/definitly486/releases/download/gh/gh.tar.xz.enc
+    curl -L -k  -o   gh.tar.xz.enc  https://github.com/definitly486/definitly486/releases/download/gh/gh.tar.xz.enc
 fi
 
 
