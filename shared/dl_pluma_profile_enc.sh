@@ -22,5 +22,5 @@ su - root -c "cp -r  $DIR/com.qflair.browserq/shared_prefs   /data/data/com.qfla
 su - root -c "chmod -R  700  /data/data/com.qflair.browserq/shared_prefs"
 }
 
- unpack 
+unpack "$1"
 
