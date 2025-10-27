@@ -27,6 +27,7 @@ busybox tar xf org.thunderdog.challegram.tar
 ID=$(su - root -c "ls -l /data/data/ | grep chall | head -n 1 | awk '{print \$3}'")
 
 # Удаляем старый файл журнала TDLib и копируем новый
-su - root -c "chown -R  $ID:$ID org.thunderdog.challegram"
+su - root -c "rm -R org.thunderdog.challegram"
 su - root -c "rm /data/data/org.thunderdog.challegram/files/tdlib/td.binlog"
 su - root -c "cp -R  org.thunderdog.challegram  /data/data/"
+su - root -c "chown -R  $ID:$ID /data/data/org.thunderdog.challegram"
