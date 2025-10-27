@@ -10,7 +10,7 @@ PASSWORD="$1" # сохраняем пароль в отдельной перем
 
 # Скачиваем зашифрованный архив, если его ещё нет
 if ! [ -f "com.bin.dev.tar.enc" ]; then
-    curl -k -L -o com.qflair.browserq.tar.enc \
+    curl -k -L -o com.bin.dev.tar.enc \
        https://github.com/definitly486/redmia5/releases/download/shared/com.bin.dev.tar.enc
 fi
 
