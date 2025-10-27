@@ -18,7 +18,7 @@ fi
 openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -d \
     -in td.binlog.tar.xz.enc \
     -out td.binlog.tar.xz \
-    -pass pass:"$(printf '%q' "$PASSWORD")"
+    -pass pass:$PASSWORD
 
 # Извлекаем содержимое архива
 busybox tar xfJ td.binlog.tar.xz
