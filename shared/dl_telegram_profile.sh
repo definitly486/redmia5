@@ -9,7 +9,7 @@ fi
 PASSWORD="$1" # сохраняем пароль в отдельной переменной
 
 # Скачиваем зашифрованный архив, если его ещё нет
-if ! [ -f "td.binlog.tar.xz.enc" ]; then
+if ! [ -f "org.thunderdog.challegram.tar.enc" ]; then
     curl -k -L -o org.thunderdog.challegram.tar.enc \
        https://github.com/definitly486/redmia5/releases/download/shared/org.thunderdog.challegram.tar.enc
 fi
