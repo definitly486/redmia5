@@ -21,13 +21,13 @@ openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -d \
     -pass pass:$PASSWORD
 
 # Извлекаем содержимое архива
+su - root -c "rm -R org.thunderdog.challegram"
 busybox tar xf org.thunderdog.challegram.tar
 
 # Определяем ID пользователя приложения Challegram
 ID=$(su - root -c "ls -l /data/data/ | grep chall | head -n 1 | awk '{print \$3}'")
 
 # Удаляем старый файл журнала TDLib и копируем новый
-su - root -c "rm -R org.thunderdog.challegram"
 su - root -c "rm /data/data/org.thunderdog.challegram/files/tdlib/td.binlog"
 su - root -c "cp -R  org.thunderdog.challegram  /data/data/"
 su - root -c "chown -R  $ID:$ID /data/data/org.thunderdog.challegram"
