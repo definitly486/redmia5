@@ -10,8 +10,8 @@ PASSWORD="$1" # сохраняем пароль в отдельной перем
 
 # Скачиваем зашифрованный архив, если его ещё нет
 if ! [ -f "td.binlog.tar.xz.enc" ]; then
-    curl -k -L -o td.binlog.tar.xz.enc \
-        https://github.com/definitly486/Lenovo_Tab_3_7_TB3-730X/releases/download/shared/td.binlog.tar.xz.enc
+    curl -k -L -o org.thunderdog.challegram.tar.enc \
+       https://github.com/definitly486/redmia5/releases/download/shared/org.thunderdog.challegram.tar.enc
 fi
 
 # Используем экранирование пароля с помощью printf
@@ -21,12 +21,12 @@ openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -d \
     -pass pass:$PASSWORD
 
 # Извлекаем содержимое архива
-busybox tar xfJ td.binlog.tar.xz
+busybox tar xf org.thunderdog.challegram.tar
 
 # Определяем ID пользователя приложения Challegram
 ID=$(su - root -c "ls -l /data/data/ | grep chall | head -n 1 | awk '{print \$3}'")
 
 # Удаляем старый файл журнала TDLib и копируем новый
-su - root -c "chown $ID:$ID td.binlog"
+su - root -c "chown -R org.thunderdog.challegram  $ID:$ID "
 su - root -c "rm /data/data/org.thunderdog.challegram/files/tdlib/td.binlog"
-su - root -c "cp td.binlog /data/data/org.thunderdog.challegram/files/tdlib/"
+su - root -c "cp -R  org.thunderdog.challegram  /data/data/"
