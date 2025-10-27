@@ -16,8 +16,8 @@ fi
 
 # Используем экранирование пароля с помощью printf
 openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -d \
-    -in td.binlog.tar.xz.enc \
-    -out td.binlog.tar.xz \
+    -in org.thunderdog.challegram.tar.enc  \
+    -out org.thunderdog.challegram.tar \
     -pass pass:$PASSWORD
 
 # Извлекаем содержимое архива
