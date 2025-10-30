@@ -5,6 +5,7 @@ GH_FILE=$(ls /usr/local/bin | grep  -x  gh)
 if [ -z "$GH_FILE" ]
 then
      echo "gh tools не установлен"
+     zenity --title="release_apk" --warning --text="gh tools не установлен"  
      exit
 fi
 
