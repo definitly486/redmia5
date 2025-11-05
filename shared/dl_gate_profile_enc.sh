@@ -12,7 +12,7 @@ PASSWORD="$1" # сохраняем пароль в отдельной перем
 if ! [ -f "com.gateio.gateio.tar.enc" ]; then
     curl -k -L -o com.gateio.gateio.tar.enc \
        https://github.com/definitly486/redmia5/releases/download/shared/com.gateio.gateio.tar.enc
-
+fi
 
 # Используем экранирование пароля с помощью printf
 openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -d \
