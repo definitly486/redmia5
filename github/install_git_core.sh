@@ -6,5 +6,5 @@ if ! [  -f "git-core.tar" ]; then
 fi
 
 busybox tar xf  git-core.tar
-su - root -c "mkdir -p /data/data/com.termos/files/usr/share"
-su - root -c "cp -r git-core   /data/data/com.termos/files/usr/share"
+su - root -c "mkdir -p /data/data/com.termux/files/usr/share"
+su - root -c "cp -r git-core   /data/data/com.termux/files/usr/share"
