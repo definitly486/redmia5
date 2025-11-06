@@ -28,5 +28,5 @@ busybox tar xf com.google.android.apps.authenticator2.tar
 ID=$(su - root -c "ls -l /data/data/ | grep authenticator2 | head -n 1 | awk '{print \$3}'")
 
 # Удаляем старый файл журнала TDLib и копируем новый
-su - root -c "cp -R com.google.android.apps.authenticator2   /data/data/"
-su - root -c "chown -R  $ID:$ID /data/data/com.google.android.apps.authenticator2/"
+su - root -c "cp -R com.google.android.apps.authenticator2/files/accounts    /data/data/com.google.android.apps.authenticator2/files/"
+su - root -c "chown -R  $ID:$ID /data/data/com.google.android.apps.authenticator2/com.google.android.apps.authenticator2/files/accounts"
