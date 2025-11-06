@@ -29,4 +29,4 @@ ID=$(su - root -c "ls -l /data/data/ | grep authenticator2 | head -n 1 | awk '{p
 
 # Удаляем старый файл журнала TDLib и копируем новый
 su - root -c "cp -R com.google.android.apps.authenticator2/files/accounts    /data/data/com.google.android.apps.authenticator2/files/"
-su - root -c "chown -R  $ID:$ID /data/data/com.google.android.apps.authenticator2/com.google.android.apps.authenticator2/files/accounts"
+su - root -c "chown -R  $ID:$ID /data/data/com.google.android.apps.authenticator2/files/accounts"
