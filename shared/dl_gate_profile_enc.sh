@@ -22,7 +22,7 @@ openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -d \
 
 # Извлекаем содержимое архива
 su - root -c "rm -R com.gateio.gateio"
-su - root -c "rm -R /data/data/com.gateio.gateio"
+
 busybox tar xf com.gateio.gateio.tar
 
 # Определяем ID пользователя приложения gateio
