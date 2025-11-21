@@ -1,0 +1,4 @@
+/storage/emulated/0/Download/
+
+python3  -m venv /data/local/tmp/env
+source  /data/local/tmp/env/bin/activate
