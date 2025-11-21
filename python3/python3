@@ -1,0 +1,4 @@
+#!/system/bin/sh
+export LD_LIBRARY_PATH=/data/local/tmp/python-android-aarch64/lib
+export PATH=/data/local/tmp/python-android-aarch64/bin:$PATH
+exec /data/local/tmp/python-android-aarch64/bin/python3.13 "$@"
