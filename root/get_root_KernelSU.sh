@@ -10,6 +10,6 @@ if [ !  -f "/tmp/redmia5/$BOOT" ]; then
     fetch --no-verify-peer  https://github.com/definitly486/redmia5/releases/download/root/$BOOT  -o /tmp/redmia5/$BOOT
 fi
 
-fastboot flash boot_a /tmp/redmia5/$BOOT
-fastboot flash boot_b /tmp/redmia5/$BOOT
-fastboot reboot
+/usr/local/bin/fastboot flash boot_a /tmp/redmia5/$BOOT
+/usr/local/bin/fastboot flash boot_b /tmp/redmia5/$BOOT
+/usr/local/bin/fastboot reboot
