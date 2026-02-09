@@ -1,4 +1,5 @@
 #!/bin/sh
+#этот img для serenity_eea_global_images_A15.0.5.0.VGWEUXM_15.0
 
 BOOT=kernelsu_patched_20251023_111041.img
 
