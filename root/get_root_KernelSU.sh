@@ -1,5 +1,5 @@
 #!/bin/sh
-#этот img для serenity_ru_global_images_A15.0.7.0.VGWRUXM_15.0
+#этот img для serenity_ru_global_images_A15.0.5.0.VGWRUXM_15.0
 
 BOOT=kernelsu_patched_20251023_111041.img
 
